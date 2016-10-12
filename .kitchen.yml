@@ -11,27 +11,27 @@ verifier:
   format: doc
 
 platforms:
-  - name: centos-5.11
-    run_list:
-      - recipe[selinux::disabled]
-      - recipe[mysql_test::yum_repo]
-  - name: centos-6.8
-    run_list:
-      - recipe[selinux::disabled]
-      - recipe[mysql_test::yum_repo]
-  - name: centos-7.2
-    run_list:
-      - recipe[selinux::disabled]
-      - recipe[mysql_test::yum_repo]
+  # - name: centos-5.11
+  #   run_list:
+  #     - recipe[selinux::disabled]
+  #     - recipe[mysql_test::yum_repo]
+  # - name: centos-6.8
+  #   run_list:
+  #     - recipe[selinux::disabled]
+  #     - recipe[mysql_test::yum_repo]
+  # - name: centos-7.2
+  #   run_list:
+  #     - recipe[selinux::disabled]
+  #     - recipe[mysql_test::yum_repo]
   - name: debian-7.11
     run_list: apt::default
   - name: debian-8.5
     run_list: apt::default
-  - name: fedora-24
-    run_list:
-      - recipe[yum::dnf_yum_compat]
-      - recipe[selinux::disabled]
-      - recipe[mysql_test::yum_repo]
+  # - name: fedora-24
+  #   run_list:
+  #     - recipe[yum::dnf_yum_compat]
+  #     - recipe[selinux::disabled]
+  #     - recipe[mysql_test::yum_repo]
   - name: ubuntu-12.04
     run_list: apt::default
   - name: ubuntu-14.04
